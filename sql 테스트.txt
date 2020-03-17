@@ -1,0 +1,25 @@
+select * from SELLER;
+
+select * from MEMBER;
+
+
+select * from BANK;
+
+select * from CATEGORY;
+
+select * from PRODUCT;
+
+insert into MEMBER values('bae','1234','bae','9401','bae@naver.com',sysdate,1);
+
+insert into SELLER VALUES ('akfmtms','akfmtms','akfmtms','akfmtms',1,11607,'경기도의정부시',1,1234);
+insert into SELLER VALUES ('bae','bae','bae','bae',1,11607,'경기도안양시',1,1234);
+
+insert into BANK values(1,'국민');
+
+insert into CATEGORY values(CATEGORY_SEQ.nextval,'전자기기',2,1); 
+
+insert into PRODUCT values(PRODUCT_SEQ.nextval,'전상배플스','SONY',90000,'썸네일','이미지','TRUE',10,2,sysdate,'bae','쎄라믹','SONY','2020-01-01','한국',0,'전자기기','색상','사이즈');
+insert into PRODUCT values(PRODUCT_SEQ.nextval,'전상배이어폰','APPLE',99999999,'썸네일','이미지','TRUE',10,2,sysdate,'bae','알루미늄','APPLE','2020-01-01','한국',0,'전자기기','색상','사이즈');
+insert into PRODUCT values(PRODUCT_SEQ.nextval,'전상배마스크','MUSINSA',648138,'썸네일','이미지','TRUE',10,2,sysdate,'bae','알루미늄','APPLE','2020-01-01','한국',5000,'전자기기','색상','사이즈');
+
+commit;
