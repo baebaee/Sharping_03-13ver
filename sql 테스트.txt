@@ -39,7 +39,7 @@ insert into PRODUCT values(PRODUCT_SEQ.nextval,'아디다스짚업','ADIDAS',700
 insert into PRODUCT values(PRODUCT_SEQ.nextval,'디그다디다','ADIDAS',10,'썸네일','이미지','TRUE',10,2,sysdate,'ADIDAS','알루미늄','APPLE','2020-01-01','한국',0,'전자기기','색상','사이즈');
 
 
-insert into ADMIN values ('admin', '$2a$10$B9T.7P92LtO44Ylg0DWdlOb95P7Gt6MErsjozoBsn3gdLSChc1i0u');
+insert into ADMIN values ('admin', '$2a$10$Qw.j6ttTKEQ7LrjA0jZFVuuRSuNrhOvY3UNMDtXWJxk3Vqfj7nu6W');
 /*관리자 admin | 11 */
 
 select * from ADMIN;
