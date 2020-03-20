@@ -1,0 +1,34 @@
+select * from MEMBER;
+
+select * from SELLER;
+
+select * from BANK;
+
+select * from CATEGORY;
+
+select * from PRODUCT;
+
+select * from ADMIN;
+
+insert into bank values (1234, '1234');
+
+insert into ADMIN values ('admin', '$2a$10$Qw.j6ttTKEQ7LrjA0jZFVuuRSuNrhOvY3UNMDtXWJxk3Vqfj7nu6W');
+/*관리자 admin | 11 */
+
+insert into CATEGORY values(CATEGORY_SEQ.nextval,'전자기기',2,1); 
+
+insert into PRODUCT values(PRODUCT_SEQ.nextval,'전상배플스','SONY',90000,'썸네일','이미지','TRUE',10,2,sysdate,'bae','쎄라믹','SONY','2020-01-01','한국',0,'전자기기','색상','사이즈');
+insert into PRODUCT values(PRODUCT_SEQ.nextval,'전상배이어폰','APPLE',99999999,'썸네일','이미지','TRUE',10,2,sysdate,'bae','알루미늄','APPLE','2020-01-01','한국',0,'전자기기','색상','사이즈');
+insert into PRODUCT values(PRODUCT_SEQ.nextval,'전상배마스크','MUSINSA',648138,'썸네일','이미지','TRUE',10,2,sysdate,'bae','알루미늄','APPLE','2020-01-01','한국',5000,'전자기기','색상','사이즈');
+
+insert into PRODUCT values(PRODUCT_SEQ.nextval,'나이키후드','NIKE',100,'썸네일','이미지','TRUE',10,2,sysdate,'NIKE','알루미늄','APPLE','2020-01-01','한국',3000,'전자기기','색상','사이즈');
+insert into PRODUCT values(PRODUCT_SEQ.nextval,'나이키바지','NIKE',500,'썸네일','이미지','TRUE',10,2,sysdate,'NIKE','알루미늄','APPLE','2020-01-01','한국',0,'전자기기','색상','사이즈');
+insert into PRODUCT values(PRODUCT_SEQ.nextval,'내나이27','NIKE',2727,'썸네일','이미지','TRUE',10,2,sysdate,'bae','알루미늄','APPLE','2020-01-01','한국',0,'전자기기','색상','사이즈');
+insert into PRODUCT values(PRODUCT_SEQ.nextval,'나이키마스크','NIKE',900,'썸네일','이미지','TRUE',10,2,sysdate,'NIKE','알루미늄','APPLE','2020-01-01','한국',10000,'전자기기','색상','사이즈');
+insert into PRODUCT values(PRODUCT_SEQ.nextval,'아디다스후드','ADIDAS',300,'썸네일','이미지','TRUE',10,2,sysdate,'ADIDAS','알루미늄','APPLE','2020-01-01','한국',0,'전자기기','색상','사이즈');
+insert into PRODUCT values(PRODUCT_SEQ.nextval,'아디다스짚업','ADIDAS',700,'썸네일','이미지','TRUE',10,2,sysdate,'ADIDAS','알루미늄','APPLE','2020-01-01','한국',50,'전자기기','색상','사이즈');
+insert into PRODUCT values(PRODUCT_SEQ.nextval,'디그다디다','ADIDAS',10,'썸네일','이미지','TRUE',10,2,sysdate,'ADIDAS','알루미늄','APPLE','2020-01-01','한국',0,'전자기기','색상','사이즈');
+
+
+
+commit;
