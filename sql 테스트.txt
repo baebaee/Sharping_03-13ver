@@ -12,10 +12,6 @@ select * from PRODUCT;
 
 select * from ADMIN;
 
-insert into ADMIN values ('admin1', '1234');
-
-
-
 insert into MEMBER values('bae','1234','bae','9401','bae@naver.com',sysdate,1);
 insert into MEMBER values('NIKE','1234','NIKE','9402','bae1@naver.com',sysdate,1);
 insert into MEMBER values('ADIDAS','1234','ADIDAS','9406','bae2@naver.com',sysdate,1);
@@ -45,6 +41,8 @@ insert into PRODUCT values(PRODUCT_SEQ.nextval,'디그다디다','ADIDAS',10,'�
 
 insert into ADMIN values ('admin', '$2a$10$B9T.7P92LtO44Ylg0DWdlOb95P7Gt6MErsjozoBsn3gdLSChc1i0u');
 /*관리자 admin | 11 */
+
+select * from ADMIN;
 
 
 commit;
