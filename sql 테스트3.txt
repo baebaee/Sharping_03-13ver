@@ -1,5 +1,7 @@
 select * from MEMBER;
 
+delete from MEMBER where "id"='t2';
+
 select * from SELLER;
 
 select * from BANK;
