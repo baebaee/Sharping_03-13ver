@@ -1,13 +1,14 @@
 select * from MEMBER;
 
-delete from MEMBER where "id"='t2';
-
 select * from SELLER;
 
 select * from BANK;
 
 select * from CATEGORY;
 
+insert into MEMBER values ('t7', '$2a$10$Dfo5TZPsC4MnbiIoYu.A..L211g6FjRGpT.rj9weNyWcv7d6DLinm', '구매7', '54644', '@@@@7', sysdate, 2, '468', '종로', '어디게에에?'); 
+
+delete from SELLER where "id" = 'bae';
     
     SELECT S."id", M."email", M."regDate", S."sellerGrade" FROM MEMBER M
 		JOIN SELLER S
@@ -15,6 +16,14 @@ select * from CATEGORY;
     
     SELECT S."id", M."email", M."regDate", S."sellerGrade" FROM MEMBER M, SELLER S
 		WHERE S."id" = M."id";
+    
+insert into NOTICE values (NOTICE_SEQ.nextval, 'admin', '공지사항1', '테스트해요', sysdate, 'TRUE');
+insert into NOTICE values (NOTICE_SEQ.nextval, 'admin', '공지사항2', '테스트해요2', sysdate, 'FALSE');
+insert into NOTICE values (NOTICE_SEQ.nextval, 'admin2', '공지사항3', '테스트해요3', sysdate, 'TRUE');
+
+SELECT * FROM NOTICE WHERE "noticeNum"= 2;
+      
+select * from NOTICE;    
 
 select * from PRODUCT;
 
