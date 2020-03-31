@@ -1,0 +1,6 @@
+
+키저장소별칭 : sinsegae 
+키저장할파일이름 : sinsegae.jks
+키 저장소 비밀 번호 : sinsegae@
+추출할인증서파일이름 : server.cer
+trust저장소로 만들 파일 이름 : trustStore
