@@ -1,0 +1,63 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+*{
+	font-family: 'nanumgothic';
+}
+		.jumbotron {
+			background-image: url('images/KakaoTalk_20191231_105241026.jpg'); 
+			background-size: cover; 
+			text-shadow: black 0.2em 0.2em 0.2em;
+			color: white;
+		}
+
+a{
+	color: #000000;
+	text-decoration: none;
+}
+a:hover {
+	color: #000000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.navbar-default{
+	background-color: #000000;
+	border-color: #000000;
+}
+.navbar-default .navbar-brand{
+	color: #ffffff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus{
+	background-color: transparent;
+	color: #bbbbbb;
+}
+.navbar-default .navbar-brand > .active > a,
+.navbar-default .navbar-brand > .active > a:hover,
+.navbar-default .navbar-brand > .active > a:focus{
+	color: white;
+	background-color: #000000;
+}
+.navbar-default .navbar-brand > li > a:hover,
+.navbar-default .navbar-brand > li > a:focus {
+	color: #bbbbbb;
+}
+.navbar-default .navbar-brand > .open > a,
+.navbar-default .navbar-brand > .open > a:hover,
+.navbar-default .navbar-brand > .open > a:focus {
+	color: #000000;
+	background-color: #ffffff
+	text-decoration:none;
+}
+.navbar-default .navbar-nav > li > a{
+	color: white;
+}
+@media (max-width: 767px){
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a{
+		color: #ffffff;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+		color: #bbbbbb;
+	}
+	
+}
