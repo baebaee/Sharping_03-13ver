@@ -6,7 +6,7 @@ select * from ADMIN;
 
 select * from NOTICE;
 
-insert into member values ('t1', '$2a$10$X8wsljZQq7TtCS3q0w6k9eS0naaFTrmZYPUbbThFTkRV9yt7OTwhS', '구매자', '231241', 'www@naver.com', sysdate, 1);
+insert into member values ('t8', '$2a$10$X8wsljZQq7TtCS3q0w6k9eS0naaFTrmZYPUbbThFTkRV9yt7OTwhS', '구매자8', '88', 'www88@naver.com', sysdate, 1, '123', '종로', '2층');
 
 insert into ADMIN values ('admin', '$2a$10$X8wsljZQq7TtCS3q0w6k9eS0naaFTrmZYPUbbThFTkRV9yt7OTwhS');
 
