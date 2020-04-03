@@ -38,6 +38,8 @@ delete from payCard;
 
 
 commit;
+delete from CATEGORY;
+select * from CATEGORY;
 
 insert into category values (CATEGORY_SEQ.NEXTVAL, '의류', 1, 0);
 insert into category values (CATEGORY_SEQ.NEXTVAL, '가전', 1, 0);
@@ -49,11 +51,32 @@ insert into category values (CATEGORY_SEQ.NEXTVAL, '후드티', 3, 4);
 insert into category values (CATEGORY_SEQ.NEXTVAL, '노트북', 3, 5);
 insert into category values (CATEGORY_SEQ.NEXTVAL, '만두', 3, 6);
 
-insert into product values (1, '후드티', '후드티입니당', 100, '1', '1', 'FALSE', 100, 1, sysdate, 'test', '면', '은호모직', sysdate, '한국', 100, '상품', '색상', '사이즈');
+select * from PRODUCT;
 
-insert into product values (3, '후우드티', '후드티입니당', 100, '1', '1', 'FALSE', 100, 27, sysdate, 'test', '면', '은호모직', sysdate, '한국', 100, '상품', '색상', '사이즈');
+insert into product values (1, '후드티', '후드티입니당', 10000, '1', '1', 'FALSE', 100, 1, sysdate, 's1', '면', '은호모직', sysdate, '한국', 100, '상품', '색상', '사이즈');
 
-insert into product values (2, '티', '티입니당', 100, '1', '1', 'FALSE', 100, 1, sysdate, 'test', '면', '은호모직', sysdate, '한국', 100, '상품', '색상', '');
+insert into product values (2, '후우드티', '후드티입니당', 21100, '1', '1', 'FALSE', 100, 1, sysdate, 's2', '면', '은호모직', sysdate, '한국', 0, '상품', '색상', '사이즈');
+
+insert into product values (3, '티', '티입니당', 32100, '1', '1', 'FALSE', 100, 1, sysdate, 's3', '면', '은호모직', sysdate, '한국', 900, '상품', '색상', '');
+
+insert into product values (4, '바지', '바지입니당', 156435, '1', '1', 'FALSE', 100, 3, sysdate, 's1', '면', '은호모직', sysdate, '한국', 0, '상품', '색상', '');
+
+insert into product values (5, '패딩', '패뒹', 3555555, '1', '1', 'TRUE', 100, 2, sysdate, 's2', '면', '은호모직', sysdate, '한국', 3000, '상품', '색상', '');
+
+insert into product values (6, '노트북', 'SAMSUNG', 1354652, '1', '1', 'FALSE', 100, 1, sysdate, 's1', '면', '은호모직', sysdate, '한국', 2000, '상품', '색상', '');
+
+insert into product values (7, '플스', 'SONY', 506320, '1', '1', 'FALSE', 100, 2, sysdate, 's3', '면', '은호모직', sysdate, '한국', 0, '상품', '색상', '');
+
+insert into product values (8, '소주', '진로', 3000, '1', '1', 'TRUE', 100, 3, sysdate, 's2', '면', '은호모직', sysdate, '한국', 0, '상품', '색상', '');
+
+insert into product values (9, '맥주', '흑맥', 5000, '1', '1', 'FALSE', 100, 1, sysdate, 's1', '면', '은호모직', sysdate, '한국', 900, '상품', '색상', '');
+
+insert into product values (10, '막걸리', '꿀밤', 8000, '1', '1', 'FALSE', 100, 2, sysdate, 's1', '면', '은호모직', sysdate, '한국', 0, '상품', '색상', '');
+
+insert into product values (11, '오렌지', '제주도', 3500, '1', '1', 'FALSE', 100, 2, sysdate, 's2', '면', '은호모직', sysdate, '한국', 6000, '상품', '색상', '');
+
+
+commit;
 
 delete from product where "productNum" = 2;
 
@@ -82,6 +105,8 @@ delete from DETAILOPTION;
 drop sequence DETAILOPTION_SEQ;
 
 drop sequence ORDER_SEQ;
+
+drop sequence CATEGORY_SEQ;
 
 CREATE SEQUENCE DETAILOPTION_SEQ
   START WITH 1
