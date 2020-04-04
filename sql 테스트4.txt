@@ -6,6 +6,8 @@ select * from ADMIN;
 
 select * from NOTICE;
 
+delete from NOTICE;
+
 insert into member values ('t8', '$2a$10$X8wsljZQq7TtCS3q0w6k9eS0naaFTrmZYPUbbThFTkRV9yt7OTwhS', '구매자8', '88', 'www88@naver.com', sysdate, 1, '123', '종로', '2층');
 
 insert into ADMIN values ('admin', '$2a$10$X8wsljZQq7TtCS3q0w6k9eS0naaFTrmZYPUbbThFTkRV9yt7OTwhS');
@@ -41,6 +43,8 @@ commit;
 delete from CATEGORY;
 select * from CATEGORY;
 
+insert into category values (0, '임시', 0, 0);
+
 insert into category values (CATEGORY_SEQ.NEXTVAL, '의류', 1, 0);
 insert into category values (CATEGORY_SEQ.NEXTVAL, '가전', 1, 0);
 insert into category values (CATEGORY_SEQ.NEXTVAL, '식품', 1, 0);
@@ -75,6 +79,7 @@ insert into product values (10, '막걸리', '꿀밤', 8000, '1', '1', 'FALSE', 
 
 insert into product values (11, '오렌지', '제주도', 3500, '1', '1', 'FALSE', 100, 2, sysdate, 's2', '면', '은호모직', sysdate, '한국', 6000, '상품', '색상', '');
 
+insert into product values (12, '포도', '서울', 1400, '1', '1', 'TRUE', 100, 1, sysdate, 's1', '면', '은호모직', sysdate, '한국', 6000, '상품', '색상', '');
 
 commit;
 
