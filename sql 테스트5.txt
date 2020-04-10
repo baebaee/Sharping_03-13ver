@@ -1,0 +1,26 @@
+select  from MEMBER;
+delete from MEMBER;
+
+select  from PRODUCT;
+delete from PRODUCT;
+
+select  from CATEGORY;
+delete from CATEGORY;
+
+select  from BANK;
+
+select  from GUEST;
+
+delete from NOTICE;
+
+commit;
+
+insert into ADMIN values ('admin', '$2a$10$WF7IePPBfXQrCY5qPNMI.uUCDcsJWPxjA39unVq9RKYRI5MHGy9K');
+
+insert into category values (0, '임시', 0, 0);
+
+insert into member values ('guest', '$2a$10$5qX86iTy90SpDRiSPgO7ve19uW90NQl.PQEvLFiIFwvmVkkZfKIMW', 'guest', '0', 'guest@guest.com', sysdate, 1, 'guest', 'guest', 'guest');
+--비밀번호 1234
+insert into seller values ('guest', 'guest', 'guest', 'guest', 1, 1234, '1234');
+
+insert into BANK values (1234, '신한');
