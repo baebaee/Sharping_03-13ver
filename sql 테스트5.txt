@@ -1,21 +1,24 @@
-select  from MEMBER;
+select * from MEMBER;
 delete from MEMBER;
 
-select  from PRODUCT;
+select * from ADMIN;
+delete from ADMIN;
+
+select * from PRODUCT;
 delete from PRODUCT;
 
-select  from CATEGORY;
+select * from CATEGORY;
 delete from CATEGORY;
 
-select  from BANK;
+select * from BANK;
 
-select  from GUEST;
+select * from GUEST;
 
 delete from NOTICE;
 
 commit;
 
-insert into ADMIN values ('admin', '$2a$10$WF7IePPBfXQrCY5qPNMI.uUCDcsJWPxjA39unVq9RKYRI5MHGy9K');
+insert into ADMIN values ('admin', '$2a$10$mwovYrncCOF2zdl0C7iAkerNX7lcwvMPP0N2Ot3YwNMeJifmK86Wq');
 
 insert into category values (0, '임시', 0, 0);
 
